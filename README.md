@@ -4,7 +4,7 @@ IRCTC railways Data Engineering Project Using Pub/Sub, BigQuery, DataFlow
 
 This project implements a real-time data pipeline for IRCTC (Indian Railway Catering and Tourism Corporation) railway data using Google Cloud Platform (GCP) services. The pipeline ingests, processes, and visualizes railway booking data using Pub/Sub, DataFlow, and BigQuery.
 
-#Architecture
+##Architecture
 
 #Data Generation & Ingestion:
 
@@ -22,7 +22,7 @@ Processed data is stored in BigQuery, enabling analytics and visualization.
 
 The data is visualized using Looker Studio (formerly Data Studio).
 
-#Technologies Used
+##Technologies Used
 
 Google Cloud Pub/Sub - Message queue for real-time ingestion.
 
@@ -34,7 +34,7 @@ Looker Studio - For visualization and reporting.
 
 Python - For data generation and transformation.
 
-#Project Components
+##Project Components
 
 #1. Data Generation (irctc_mock_data_to_pubsub.py)
 
@@ -101,7 +101,7 @@ gcloud dataflow jobs run irctc-dataflow-job \
         javascriptTextTransformGcsPath=gs://your-bucket/transform_udf.js,\
         javascriptTextTransformFunctionName=transform_data
 
-#5. Query Data in BigQuery
+##5. Query Data in BigQuery
 
 After processing, query the data in BigQuery:
 CREATE TABLE `irctc_dwh.irctc_stream_tb` (
@@ -121,11 +121,11 @@ CREATE TABLE `irctc_dwh.irctc_stream_tb` (
 );
 
 
-#6. Visualize Data in Looker Studio
+##6. Visualize Data in Looker Studio
 
 Connect BigQuery to Looker Studio to create dashboards
 
-#Future Enhancements
+##Future Enhancements
 
 Integrate Real IRCTC API for live data streaming.
 
