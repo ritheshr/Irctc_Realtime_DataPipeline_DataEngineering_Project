@@ -54,7 +54,7 @@ Standardize and enrich user information.
 
 Compute additional fields such as account age.
 
-# 3. Data Visualization (IRCTC_DATA_VISUAL.pdf)
+# 3. Data Visualization (IRCTC_DATA_VISUAL.pdf) : https://lookerstudio.google.com/s/k2hK2CPEcD0
 
 A Looker Studio dashboard is used to visualize processed data, showing:
 
